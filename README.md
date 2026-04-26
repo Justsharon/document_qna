@@ -2,8 +2,7 @@
 
 ## Live Dashboard
 
-![Document Question & Answer](assets/Document_Q&A _Assistant_page-0001.jpgg)
-
+![Document Question & Answer](assets/dashboard1.jpg)
 
 ### Project Summary
 I built a Document Q&A Assistant that ingests a PDF library, chunks documents with overlap to preserve semantic continuity, stores chunks in ChromaDB with source metadata, and answers natural language questions using a RAG pipeline with Groq.
