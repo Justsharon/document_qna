@@ -44,7 +44,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.title("📚 Document Q&A Assistant")
+st.title("Document Q&A Assistant")
 st.caption("Ask questions about your document library — answers grounded in source material with attribution")
 
 # Build collection (cached)
@@ -55,7 +55,7 @@ def load_collection():
 with st.spinner("Loading document library..."):
     collection = load_collection()
 
-st.success(f"✅ Knowledge base ready — {collection.count()} chunks indexed")
+st.success(f"Knowledge base ready — {collection.count()} chunks indexed")
 
 st.divider()
 
@@ -85,7 +85,7 @@ if st.button("Ask", type="primary") and query:
     if result["sources"]:
         st.markdown("### Sources")
         sources_html = "".join([
-            f'<span class="source-badge">📄 {s}</span>'
+            f'<span class="source-badge"> {s}</span>'
             for s in result["sources"]
         ])
         st.markdown(sources_html, unsafe_allow_html=True)
